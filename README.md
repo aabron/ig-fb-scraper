@@ -43,6 +43,10 @@ python scraper.py -b "Joe's Pizza" "Main Street Bar" -o output.csv
 python scraper.py -b "Blue Lagoon Resort" -o resort_profiles.csv \
      --max-results 20 --fb-cookies fb_cookies.txt \
      --ig-user myinsta --ig-pass mypassword
+
+# Search by city & set max keyword search
+python city_scraper.py -c "Detroit" --fb-cookies fb_cookies.txt
+     --ig-user myinsta --ig-pass mypassword --max-per-keyword 10
 ```
 
 The output `CSV` will contain combined rows from both platforms with the following columns (more may appear depending on available data):
