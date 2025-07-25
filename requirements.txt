@@ -1,0 +1,7 @@
+facebook-scraper
+instaloader
+ddgs
+beautifulsoup4
+tqdm
+pandas
+lxml_html_clean
