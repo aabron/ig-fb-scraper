@@ -25,7 +25,7 @@ from typing import Dict, List, Optional, Set, Tuple
 
 from tqdm import tqdm
 
-# Dynamically import helper functions from scraper.py (same directory)
+# dynamically import helper functions from scraper.py
 try:
     scraper = importlib.import_module("scraper")
 except ModuleNotFoundError:
@@ -162,7 +162,7 @@ def scrape_city(city: str,
     save_to_csv(rows, output)
 
 
-# ---------------- CLI ------------------------
+# ---------------- cli ------------------------
 
 def main():
     parser = argparse.ArgumentParser(description="Discover & scrape hospitality businesses in a given city from Facebook & Instagram.")
